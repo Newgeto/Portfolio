@@ -1,9 +1,11 @@
+import photo from '../assets/photo.jpg'
+
 function Header() {
   return (
     <header className="appHeader">
       <div className="appHeaderInner">
         <a className="appHeaderBrand" href="#home" aria-label="Aller à l'accueil">
-          <img className="appHeaderLogo" src="/src/assets/photo.jpg" alt="" />
+          <img className="appHeaderLogo" src={photo} alt="" />
           <span>Mdoughy Yanis</span>
         </a>
 
