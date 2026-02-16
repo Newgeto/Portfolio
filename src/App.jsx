@@ -64,7 +64,7 @@ function App() {
             <div className="hero">
               <div className="heroContent">
                 <h1 className="title">Mdoughy Yanis</h1>
-                <p className="subtitle">Etudiant a Epitech paris en bachelor informatique passioner par le dev web</p>
+                <p className="subtitle">Étudiant en bachelor informatique à Epitech Paris, passionné par le développement web</p>
                 <div className="actions">
                   <a className="button" href="#projects">Voir mes projets</a>
                   <a className="button button-secondary" href="#contact">Me contacter</a>
