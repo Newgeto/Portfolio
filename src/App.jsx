@@ -1,12 +1,12 @@
 import './styles/index.css'
 import { useEffect } from 'react'
-import Header from './components/header.jsx'
-import Footer from './components/footer.jsx'
-import Home from './sections/home.jsx'
-import About from './sections/about.jsx'
-import Projects from './sections/projects.jsx'
-import Skills from './sections/skills.jsx'
-import Contact from './sections/contact.jsx'
+import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
+import Home from './sections/Home.jsx'
+import About from './sections/About.jsx'
+import Projects from './sections/Projects.jsx'
+import Skills from './sections/Skills.jsx'
+import Contact from './sections/Contact.jsx'
 
 function App() {
   useEffect(() => {
