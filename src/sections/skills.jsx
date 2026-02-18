@@ -5,21 +5,13 @@ function Skills() {
     <section id="skills" className="section sectionSkills reveal" data-reveal>
       <div className="sectionInner">
         <h2 className="sectionTitle">Compétences</h2>
-        <div className="skillsCategories" aria-label="Compétences">
-          <div className="skillCategory">
-            <h3 className="skillCategoryTitle">Création</h3>
-            <div className="skillLogoGrid">
-              {SKILLS.creation.map(({ name, logo }) => (
-                <div key={name} className="skillLogoItem" title={name}>
-                  <img className="skillLogoImg" src={logo} alt={name} loading="lazy" />
-                  <span className="skillLogoName">{name}</span>
-                </div>
-              ))}
+
+        <div className="skillsFeatured" aria-label="Développement">
+          <div className="skillCategory skillCategoryFeatured">
+            <div className="skillCategoryHeader">
+              <h3 className="skillCategoryTitle">Développement</h3>
             </div>
-          </div>
-          <div className="skillCategory">
-            <h3 className="skillCategoryTitle">Développement</h3>
-            <div className="skillLogoGrid">
+            <div className="skillLogoGrid skillLogoGridFeatured">
               {SKILLS.dev.map(({ name, logo }) => (
                 <div key={name} className="skillLogoItem" title={name}>
                   <img className="skillLogoImg" src={logo} alt={name} loading="lazy" />
@@ -28,10 +20,28 @@ function Skills() {
               ))}
             </div>
           </div>
+        </div>
+
+        <div className="skillsCategories" aria-label="Autres compétences">
           <div className="skillCategory">
-            <h3 className="skillCategoryTitle">Outils & management</h3>
+            <div className="skillCategoryHeader">
+              <h3 className="skillCategoryTitle">Outils</h3>
+            </div>
             <div className="skillLogoGrid">
               {SKILLS.tools.map(({ name, logo }) => (
+                <div key={name} className="skillLogoItem" title={name}>
+                  <img className="skillLogoImg" src={logo} alt={name} loading="lazy" />
+                  <span className="skillLogoName">{name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="skillCategory">
+            <div className="skillCategoryHeader">
+              <h3 className="skillCategoryTitle">Création</h3>
+            </div>
+            <div className="skillLogoGrid">
+              {SKILLS.creation.map(({ name, logo }) => (
                 <div key={name} className="skillLogoItem" title={name}>
                   <img className="skillLogoImg" src={logo} alt={name} loading="lazy" />
                   <span className="skillLogoName">{name}</span>

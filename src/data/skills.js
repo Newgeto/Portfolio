@@ -14,6 +14,7 @@ export const SKILLS = {
     { name: 'CSS', logo: `${CDN}/css3/css3-original.svg` },
     { name: 'React', logo: `${CDN}/react/react-original.svg` },
     { name: 'Express', logo: `${CDN}/express/express-original.svg` },
+    { name: 'Node.js', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png' },
     { name: 'JavaScript', logo: `${CDN}/javascript/javascript-original.svg` },
     { name: 'TypeScript', logo: `${CDN}/typescript/typescript-original.svg` },
     { name: 'Python', logo: `${CDN}/python/python-original.svg` },

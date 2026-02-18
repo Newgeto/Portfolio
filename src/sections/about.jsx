@@ -4,11 +4,7 @@ function About() {
       <div className="sectionInner">
         <h2 className="sectionTitle">À propos</h2>
         <div className="aboutCopy">
-          <p>
-            Passionné par l’informatique et le développement, j’aime comprendre comment fonctionnent les technologies qui nous entourent.  
-            Je progresse à travers différents projets qui me permettent d’améliorer mes compétences et de me challenger.  
-            Curieux et motivé, je m’intéresse aux nouvelles tendances du web pour continuer à évoluer.
-          </p>
+          <p>Je suis étudiant en informatique, curieux et motivé, avec une vraie envie d’apprendre et de progresser chaque jour. Je m’intéresse particulièrement au développement web et au développement de jeux vidéo. J’aime comprendre comment les choses fonctionnent, tester, créer et m’améliorer à travers des projets concrets.</p>
         </div>
       </div>
     </section>

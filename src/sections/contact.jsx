@@ -1,4 +1,8 @@
 function Contact() {
+  const mailSubject = encodeURIComponent('Prise de contact via mon portfolio')
+  const mailBody = encodeURIComponent('Bonjour Yanis,\n\nJ\'aimerais discuter de...')
+  const mailHref = `mailto:Yanis.mdoughy@outlook.fr?subject=${mailSubject}&body=${mailBody}`
+
   return (
     <section id="contact" className="section sectionContact reveal" data-reveal>
       <div className="sectionInner">
@@ -7,7 +11,7 @@ function Contact() {
         <div className="contactGrid">
           <a
             className="contactCard"
-            href="mailto:Yanis.mdoughy@outlook.fr?subject=Contact%20portfolio&body=Bonjour%20Yanis%2C%0A%0AJe%20te%20contacte%20suite%20%C3%A0%20ton%20portfolio.%0A%0A%5BExplique%20ton%20besoin%5D%0A%0ACordialement%2C%0A"
+            href={mailHref}
           >
             <div className="contactIcon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,9 +39,7 @@ function Contact() {
           >
             <div className="contactIcon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                <rect x="2" y="9" width="4" height="12"/>
-                <circle cx="4" cy="4" r="2"/>
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.369-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.814 20.452H3.86V9h2.954v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
               </svg>
             </div>
             <span className="contactValue">LinkedIn</span>

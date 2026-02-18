@@ -1,0 +1,43 @@
+.sectionHome {
+  background: #ffffff;
+}
+
+.sectionAbout {
+  background: var(--soft);
+}
+
+.sectionProjects {
+  background: var(--dark);
+  color: var(--darkText);
+  border-bottom: none;
+}
+
+.sectionSkills {
+  background: #ffffff;
+  color: #0b0b0b;
+}
+
+.sectionSkills .sectionTitle,
+.sectionSkills .skillCategoryTitle,
+.sectionSkills .skillLogoName {
+  color: #0b0b0b;
+}
+
+.sectionContact {
+  background: var(--softAccent);
+}
+
+.sectionProjects .muted {
+  color: var(--darkMuted);
+}
+
+.sectionProjects .card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: none;
+}
+
+.sectionProjects .card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.18);
+}

@@ -1,0 +1,39 @@
+.reveal {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 520ms ease, transform 520ms ease;
+}
+
+.revealDelay1.is-visible {
+  transition-delay: 80ms;
+}
+
+.revealDelay2.is-visible {
+  transition-delay: 160ms;
+}
+
+.revealDelay3.is-visible {
+  transition-delay: 240ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  .card,
+  .contactCard,
+  .reveal,
+  .reveal.is-visible {
+    transition: none;
+    transform: none;
+  }
+
+  .revealDelay1.is-visible,
+  .revealDelay2.is-visible,
+  .revealDelay3.is-visible {
+    transition-delay: 0ms;
+  }
+}

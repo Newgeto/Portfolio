@@ -6,16 +6,20 @@ function Home() {
       <div className="sectionInner">
         <div className="hero">
           <div className="heroContent">
-            <h1 className="title">Mdoughy Yanis</h1>
-            <p className="subtitle">Étudiant en bachelor informatique à Epitech Paris, passionné par le développement web</p>
-            <div className="actions">
+            <h1 className="title reveal revealDelay1" data-reveal>
+              Mdoughy Yanis
+            </h1>
+            <p className="subtitle reveal revealDelay2" data-reveal>
+              Etudiant en informatique à Epitech Paris
+            </p>
+            <div className="actions reveal revealDelay3" data-reveal>
               <a className="button" href="#projects">Voir mes projets</a>
               <a className="button button-secondary" href="#contact">Me contacter</a>
             </div>
           </div>
 
           <div className="heroMedia">
-            <img className="heroPhoto" src={photo} alt="Photo de Mdoughy Yanis" />
+            <img className="heroPhoto" src={photo} alt="Photo de profil" />
           </div>
         </div>
       </div>
