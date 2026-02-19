@@ -4,6 +4,8 @@ import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import Home from './sections/Home.jsx'
 import About from './sections/About.jsx'
+import Experience from './sections/Experience.jsx'
+import Formation from './sections/Formation.jsx'
 import Projects from './sections/Projects.jsx'
 import Skills from './sections/Skills.jsx'
 import Contact from './sections/Contact.jsx'
@@ -42,6 +44,8 @@ function App() {
         <About />
         <Projects />
         <Skills />
+        <Experience />
+        <Formation />
         <Contact />
       </main>
 

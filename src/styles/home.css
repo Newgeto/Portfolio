@@ -9,6 +9,62 @@
   max-width: 62ch;
 }
 
+.heroSchoolLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  font-size: 1.35rem;
+  margin: 1.3rem 0 0.65rem;
+}
+
+.heroSchoolLink:hover {
+  text-decoration: underline;
+}
+
+.heroSchoolText {
+  letter-spacing: -0.01em;
+}
+
+.heroBadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0 0 0.9rem;
+}
+
+.heroPill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.42rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(11, 11, 11, 0.14);
+  background: rgba(255, 255, 255, 0.72);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.heroPillAccent {
+  border-color: rgba(249, 115, 22, 0.35);
+  background: rgba(249, 115, 22, 0.12);
+}
+
+.heroLocation {
+  margin: 0 0 1.1rem;
+  font-size: 1.08rem;
+}
+
+.epitechLogo {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(11, 11, 11, 0.12);
+}
+
 .heroMedia {
   display: flex;
   justify-content: center;
