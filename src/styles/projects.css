@@ -81,3 +81,12 @@
   text-decoration: none;
 }
 
+.projectButton:active {
+  transform: translateY(0px);
+}
+
+.projectButton:focus-visible {
+  outline: 3px solid rgba(249, 115, 22, 0.35);
+  outline-offset: 3px;
+}
+

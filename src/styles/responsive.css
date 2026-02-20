@@ -106,15 +106,10 @@
     width: 40px;
     height: 40px;
   }
-}
 
-@media (max-width: 900px) {
-  .appHeaderLinks {
-    display: none !important;
-  }
-
-  .appHeaderToggle {
-    display: inline-flex !important;
+  .skillLogoImgWordpress {
+    width: 48px;
+    height: 48px;
   }
 }
 
@@ -170,12 +165,6 @@
   .contactGrid {
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
-  }
-
-  .contactLayout {
-    grid-template-columns: 0.95fr 1.05fr;
-    align-items: start;
-    gap: 1.4rem;
   }
 
   .skillsCategories {

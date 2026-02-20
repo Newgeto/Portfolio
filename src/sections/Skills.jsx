@@ -14,7 +14,7 @@ function Skills() {
             <div className="skillLogoGrid skillLogoGridFeatured">
               {SKILLS.dev.map(({ name, logo }) => (
                 <div key={name} className="skillLogoItem" title={name}>
-                  <img className="skillLogoImg" src={logo} alt={name} loading="lazy" />
+                  <img className={`skillLogoImg${name === 'WordPress' ? ' skillLogoImgWordpress' : ''}`} src={logo} alt={name} loading="lazy" />
                   <span className="skillLogoName">{name}</span>
                 </div>
               ))}
@@ -30,7 +30,7 @@ function Skills() {
             <div className="skillLogoGrid">
               {SKILLS.tools.map(({ name, logo }) => (
                 <div key={name} className="skillLogoItem" title={name}>
-                  <img className="skillLogoImg" src={logo} alt={name} loading="lazy" />
+                  <img className={`skillLogoImg${name === 'WordPress' ? ' skillLogoImgWordpress' : ''}`} src={logo} alt={name} loading="lazy" />
                   <span className="skillLogoName">{name}</span>
                 </div>
               ))}
@@ -43,7 +43,7 @@ function Skills() {
             <div className="skillLogoGrid">
               {SKILLS.creation.map(({ name, logo }) => (
                 <div key={name} className="skillLogoItem" title={name}>
-                  <img className="skillLogoImg" src={logo} alt={name} loading="lazy" />
+                  <img className={`skillLogoImg${name === 'WordPress' ? ' skillLogoImgWordpress' : ''}`} src={logo} alt={name} loading="lazy" />
                   <span className="skillLogoName">{name}</span>
                 </div>
               ))}

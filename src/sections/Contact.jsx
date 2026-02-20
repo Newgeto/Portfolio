@@ -9,16 +9,6 @@ function Contact() {
         <h2 className="sectionTitle">Contact</h2>
 
         <div className="contactLayout">
-          <div className="contactIntro card">
-            <p className="contactIntroCopy muted">
-              Je suis disponible pour un stage et ouvert aux échanges. Le plus simple est de me contacter par téléphone ou par email.
-            </p>
-            <div className="contactIntroActions">
-              <a className="button" href={mailHref}>Envoyer un email</a>
-              <a className="button button-secondary" href="tel:+33662679122">Appeler</a>
-            </div>
-          </div>
-
           <div className="contactGrid" aria-label="Moyens de contact">
             <a className="contactCard" href={mailHref} aria-label="Envoyer un email">
               <div className="contactIcon" aria-hidden="true">

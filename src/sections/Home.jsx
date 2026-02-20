@@ -1,6 +1,8 @@
 import photo from '../assets/photo.jpg'
 
 function Home() {
+  const cvHref = `${import.meta.env.BASE_URL}cv.html`
+
   return (
     <section id="home" className="section sectionHome reveal" data-reveal>
       <div className="sectionInner">
@@ -38,6 +40,9 @@ function Home() {
             <div className="actions reveal revealDelay3" data-reveal>
               <a className="button" href="#projects">Voir mes projets</a>
               <a className="button button-secondary" href="#contact">Me contacter</a>
+              <a className="button button-secondary" href={cvHref} target="_blank" rel="noreferrer">
+                Voir CV
+              </a>
             </div>
           </div>
 

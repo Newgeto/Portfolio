@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const cvHref = `${import.meta.env.BASE_URL}cv.html`
 
   useEffect(() => {
     if (!menuOpen) return
@@ -28,6 +29,9 @@ function Header() {
           <nav className="appHeaderLinks" aria-label="Liens rapides">
             <a className="appHeaderLink" href="mailto:Yanis.mdoughy@outlook.fr">
               Email
+            </a>
+            <a className="appHeaderLink" href={cvHref} target="_blank" rel="noreferrer">
+              Cv
             </a>
             <a
               className="appHeaderLink"
@@ -67,6 +71,9 @@ function Header() {
       >
         <a className="appHeaderMenuLink" href="mailto:Yanis.mdoughy@outlook.fr" onClick={() => setMenuOpen(false)}>
           Email
+        </a>
+        <a className="appHeaderMenuLink" href={cvHref} target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)}>
+          Cv
         </a>
         <a
           className="appHeaderMenuLink"

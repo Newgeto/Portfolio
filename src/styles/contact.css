@@ -1,35 +1,16 @@
+.sectionContact .sectionTitle {
+  text-align: center;
+}
+
 .contactLayout {
   margin-top: 1.25rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.1rem;
-}
-
-.contactIntro {
-  border-radius: 18px;
-  border: 1px solid rgba(249, 115, 22, 0.18);
-  background: linear-gradient(180deg, rgba(249, 115, 22, 0.08), rgba(255, 255, 255, 0.92));
-}
-
-.contactIntroTitle {
-  margin: 0;
-  font-size: 1.25rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-}
-
-.contactIntroCopy {
-  margin: 0.65rem 0 0;
-}
-
-.contactIntroActions {
-  margin-top: 1.05rem;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+  justify-content: center;
 }
 
 .contactGrid {
+  width: 100%;
+  max-width: 820px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;

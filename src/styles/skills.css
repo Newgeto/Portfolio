@@ -63,12 +63,34 @@
   border-radius: 12px;
   border: 1px solid var(--border);
   background: #ffffff;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.skillLogoItem:hover {
+  transform: translateY(-2px);
+  border-color: rgba(249, 115, 22, 0.25);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.07);
+}
+
+.skillLogoItem:hover .skillLogoImg {
+  transform: scale(1.04);
+}
+
+.skillLogoItem:focus-within {
+  outline: 3px solid rgba(249, 115, 22, 0.28);
+  outline-offset: 3px;
 }
 
 .skillLogoImg {
   width: 48px;
   height: 48px;
   object-fit: contain;
+  transition: transform 160ms ease;
+}
+
+.skillLogoImgWordpress {
+  width: 56px;
+  height: 56px;
 }
 
 .skillLogoName {

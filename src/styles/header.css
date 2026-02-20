@@ -34,6 +34,13 @@
   border-radius: 999px;
   object-fit: cover;
   border: 1px solid var(--border);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.appHeaderBrand:hover .appHeaderLogo {
+  transform: scale(1.06);
+  border-color: rgba(249, 115, 22, 0.28);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
 }
 
 .appHeaderNav {
@@ -59,6 +66,15 @@
 .appHeaderToggle:hover {
   border-color: rgba(249, 115, 22, 0.35);
   background: rgba(249, 115, 22, 0.08);
+}
+
+.appHeaderToggle:active {
+  transform: translateY(1px);
+}
+
+.appHeaderToggle:focus-visible {
+  outline: 3px solid rgba(249, 115, 22, 0.35);
+  outline-offset: 3px;
 }
 
 .appHeaderMenu {
@@ -101,6 +117,15 @@
 .appHeaderMenuLink:hover {
   border-color: rgba(249, 115, 22, 0.35);
   background: rgba(249, 115, 22, 0.08);
+}
+
+.appHeaderMenuLink:active {
+  transform: translateY(1px);
+}
+
+.appHeaderMenuLink:focus-visible {
+  outline: 3px solid rgba(249, 115, 22, 0.35);
+  outline-offset: 3px;
 }
 
 .appHeaderLinks {
