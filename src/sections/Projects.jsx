@@ -10,7 +10,7 @@ function Projects() {
       title: 'OWASP Juice Shop - Pentest',
       description: 'Un projet où j\'ai exploré les vulnérabilités communes des applications web sur OWASP Juice Shop.',
       link: {
-        label: 'Voir le dépôt',
+        label: 'Voir la repo',
         href: 'https://github.com/Newgeto/Pentest-OWASP-Juice-Shop',
       },
       dates: {
@@ -24,7 +24,7 @@ function Projects() {
       title: 'E-Todos',
       description: 'Une application de gestion de tâches interactive construite avec Node.js, Express, CORS, JWT.',
       link: {
-        label: 'Voir le dépôt',
+        label: 'Voir la repo',
         href: 'https://github.com/Newgeto/E-Todos',
       },
       video: {
@@ -42,7 +42,7 @@ function Projects() {
       title: 'CV Builder',
       description: 'Un générateur de CV dynamique développé avec PHP permettant de créer un CV professionnel facilement.',
       link: {
-        label: 'Voir le dépôt',
+        label: 'Voir la repo',
         href: 'https://github.com/Newgeto/CV-Builder',
       },
       dates: {

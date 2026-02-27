@@ -1,9 +1,10 @@
 import photo from '../assets/photo.jpg'
+import cvPdf from '../assets/cv-yanis-mdoughy.pdf'
 import { useEffect, useState } from 'react'
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
-  const cvHref = `${import.meta.env.BASE_URL}cv.html`
+  const cvHref = cvPdf
 
   useEffect(() => {
     if (!menuOpen) return

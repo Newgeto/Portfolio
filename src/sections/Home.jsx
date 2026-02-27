@@ -1,7 +1,8 @@
 import photo from '../assets/photo.jpg'
+import cvPdf from '../assets/cv-yanis-mdoughy.pdf'
 
 function Home() {
-  const cvHref = `${import.meta.env.BASE_URL}cv.html`
+  const cvHref = cvPdf
 
   return (
     <section id="home" className="section sectionHome reveal" data-reveal>
