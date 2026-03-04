@@ -27,10 +27,6 @@ function Projects() {
         label: 'Voir la repo',
         href: 'https://github.com/Newgeto/E-Todos',
       },
-      video: {
-        src: '/videos/e-todos-demo.mp4',
-        type: 'video/mp4',
-      },
       dates: {
         start: '03/11/2025 08:00',
         registrationEnd: '09/11/2025 23:42',
@@ -49,6 +45,20 @@ function Projects() {
         start: '30/10/2025 00:00',
         registrationEnd: '30/10/2025 15:00',
         end: '02/11/2025 23:42',
+      },
+    },
+    {
+      id: 'Showeather',
+      title: 'Showeather',
+      description: 'Une application météo construite avec React + Vite et l\'API OpenWeatherMap pour afficher la météo en temps réel.',
+      link: {
+        label: 'Voir la repo',
+        href: 'https://github.com/Newgeto/showeather',
+      },
+      dates: {
+        start: '01/01/2026 00:00',
+        registrationEnd: '01/01/2026 00:00',
+        end: '01/01/2026 00:00',
       },
     },
   ]
@@ -72,16 +82,16 @@ function Projects() {
                 </span>
               </div>
 
-              <div className="projectActions" aria-label="Lien du projet">
-                <a
-                  className="projectButton"
-                  href={project.link.href}
-                  target={project.link.href.startsWith('http') ? '_blank' : undefined}
-                  rel={project.link.href.startsWith('http') ? 'noreferrer' : undefined}
-                >
-                  {project.link.label}
-                </a>
-              </div>
+            <div className="projectActions" aria-label="Lien du projet">
+              <a
+                className="projectButton"
+                href={project.link.href}
+                target={project.link.href.startsWith('http') ? '_blank' : undefined}
+                rel={project.link.href.startsWith('http') ? 'noreferrer' : undefined}
+              >
+                {project.link.label}
+              </a>
+            </div>
             </article>
           ))}
         </div>
