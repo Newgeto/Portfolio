@@ -1,65 +1,46 @@
 function Projects() {
-  const formatDate = (value) => {
-    const dateStr = String(value || '').split(' ')[0]
-    return dateStr.replace(/(\d+)\/(\d+)\/(\d+)/, '$1 / $2 / $3')
-  }
-
   const projects = [
     {
-      id: 'Pentest OWASP Juice Shop',
-      title: 'OWASP Juice Shop - Pentest',
-      description: 'Un projet où j\'ai exploré les vulnérabilités communes des applications web sur OWASP Juice Shop.',
-      link: {
-        label: 'Voir la repo',
-        href: 'https://github.com/Newgeto/Pentest-OWASP-Juice-Shop',
-      },
-      dates: {
-        start: '01/12/2025 08:00',
-        registrationEnd: '05/12/2025 18:00',
-        end: '19/12/2025 19:00',
-      },
+      id: 'Rustodo',
+      title: 'Rustodo',
+      description: "Application 'Todo' en Rust avec interface graphique et sauvegarde automatique des tâches.",
+      link: { label: 'Voir la repo', href: 'https://github.com/Newgeto/Rustodo' },
+      // Pas de dates
     },
     {
-      id: 'E-todos',
-      title: 'E-Todos',
-      description: 'Une application de gestion de tâches interactive construite avec Node.js, Express, CORS, JWT.',
-      link: {
-        label: 'Voir la repo',
-        href: 'https://github.com/Newgeto/E-Todos',
-      },
-      dates: {
-        start: '03/11/2025 08:00',
-        registrationEnd: '09/11/2025 23:42',
-        end: '28/11/2025 19:00',
-      },
-    },
-    {
-      id: 'Cv builder',
-      title: 'CV Builder',
-      description: 'Un générateur de CV dynamique développé avec PHP permettant de créer un CV professionnel facilement.',
-      link: {
-        label: 'Voir la repo',
-        href: 'https://github.com/Newgeto/CV-Builder',
-      },
-      dates: {
-        start: '30/10/2025 00:00',
-        registrationEnd: '30/10/2025 15:00',
-        end: '02/11/2025 23:42',
-      },
+      id: 'Flaskops',
+      title: 'Flaskops',
+      description: "Projet récent utilisant Flask pour créer une API et gérer des opérations back-end de manière efficace.",
+      link: { label: 'Voir la repo', href: 'https://github.com/Newgeto/Flaskops' },
+      // Pas de dates
     },
     {
       id: 'Showeather',
       title: 'Showeather',
-      description: 'Une application météo construite avec React + Vite et l\'API OpenWeatherMap pour afficher la météo en temps réel.',
-      link: {
-        label: 'Voir la repo',
-        href: 'https://github.com/Newgeto/showeather',
-      },
-      dates: {
-        start: '01/01/2026 00:00',
-        registrationEnd: '01/01/2026 00:00',
-        end: '01/01/2026 00:00',
-      },
+      description: "Application météo en temps réel avec React + Vite et l'API OpenWeatherMap.",
+      link: { label: 'Voir la repo', href: 'https://github.com/Newgeto/showeather' },
+      // Pas de dates
+    },
+    {
+      id: 'Hack-and-Juice',
+      title: 'Hack and Juice',
+      description: "Exploration des vulnérabilités courantes des applications web en travaillant sur OWASP Juice Shop.",
+      link: { label: 'Voir la repo', href: 'https://github.com/Newgeto/Hack-and-Juice' },
+      dates: { start: '01/12/2025', end: '19/12/2025' },
+    },
+    {
+      id: 'E-todos',
+      title: 'E-Todos',
+      description: "Application interactive de gestion de tâches avec Node.js, Express, CORS et JWT.",
+      link: { label: 'Voir la repo', href: 'https://github.com/Newgeto/E-Todos' },
+      dates: { start: '03/11/2025', end: '28/11/2025' },
+    },
+    {
+      id: 'Cv-builder',
+      title: 'CV Builder',
+      description: "Générateur de CV dynamique en PHP pour créer un CV professionnel facilement.",
+      link: { label: 'Voir la repo', href: 'https://github.com/Newgeto/CV-Builder' },
+      dates: { start: '30/10/2025', end: '02/11/2025' },
     },
   ]
 
@@ -76,22 +57,24 @@ function Projects() {
 
               <p className="projectDescription">{project.description}</p>
 
-              <div className="projectMeta" aria-label="Période du projet">
-                <span className="projectDates">
-                  Du&nbsp;<strong>{formatDate(project.dates.start)}</strong>&nbsp;au&nbsp;<strong>{formatDate(project.dates.end)}</strong>
-                </span>
-              </div>
+              {project.dates?.start && project.dates?.end && (
+                <div className="projectMeta" aria-label="Période du projet">
+                  <span className="projectDates">
+                    Du&nbsp;<strong>{project.dates.start}</strong>&nbsp;au&nbsp;<strong>{project.dates.end}</strong>
+                  </span>
+                </div>
+              )}
 
-            <div className="projectActions" aria-label="Lien du projet">
-              <a
-                className="projectButton"
-                href={project.link.href}
-                target={project.link.href.startsWith('http') ? '_blank' : undefined}
-                rel={project.link.href.startsWith('http') ? 'noreferrer' : undefined}
-              >
-                {project.link.label}
-              </a>
-            </div>
+              <div className="projectActions" aria-label="Lien du projet">
+                <a
+                  className="projectButton"
+                  href={project.link.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {project.link.label}
+                </a>
+              </div>
             </article>
           ))}
         </div>
