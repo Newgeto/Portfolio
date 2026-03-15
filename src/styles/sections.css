@@ -1,5 +1,5 @@
 .sectionHome {
-  background: #ffffff;
+  background: var(--bg);
 }
 
 .sectionAbout {
@@ -7,27 +7,62 @@
 }
 
 .sectionExperience {
-  --resumeAccent: rgba(249, 115, 22, 1);
-  --resumeAccent2: rgba(234, 88, 12, 1);
+  --resumeAccent: rgba(17, 24, 39, 1);
+  --resumeAccent2: rgba(11, 18, 32, 1);
   --resumeTint: var(--soft);
-  --resumeRail: rgba(249, 115, 22, 0.24);
-  --resumeBorder: rgba(249, 115, 22, 0.18);
-  --resumeBadgeBorder: rgba(249, 115, 22, 0.28);
-  --resumeBadgeBg: rgba(249, 115, 22, 0.12);
-  --resumeDotRing: rgba(249, 115, 22, 0.16);
+  --resumeRail: rgba(11, 18, 32, 0.18);
+  --resumeBorder: rgba(11, 18, 32, 0.14);
+  --resumeBadgeBorder: rgba(11, 18, 32, 0.18);
+  --resumeBadgeBg: rgba(11, 18, 32, 0.06);
+  --resumeDotRing: rgba(11, 18, 32, 0.12);
   background: var(--resumeTint);
 }
 
 .sectionFormation {
-  --resumeAccent: rgba(11, 11, 11, 1);
-  --resumeAccent2: rgba(65, 65, 65, 1);
-  --resumeTint: #fff7ed;
-  --resumeRail: rgba(11, 11, 11, 0.18);
-  --resumeBorder: rgba(11, 11, 11, 0.14);
-  --resumeBadgeBorder: rgba(11, 11, 11, 0.18);
-  --resumeBadgeBg: rgba(11, 11, 11, 0.06);
-  --resumeDotRing: rgba(11, 11, 11, 0.12);
+  --resumeAccent: rgba(255, 255, 255, 0.92);
+  --resumeAccent2: rgba(255, 255, 255, 0.76);
+  --resumeTint: var(--dark);
+  --resumeRail: rgba(255, 255, 255, 0.16);
+  --resumeBorder: rgba(255, 255, 255, 0.12);
+  --resumeBadgeBorder: rgba(255, 255, 255, 0.18);
+  --resumeBadgeBg: rgba(255, 255, 255, 0.06);
+  --resumeDotRing: rgba(255, 255, 255, 0.12);
   background: var(--resumeTint);
+  color: var(--darkText);
+}
+
+.sectionFormation .muted {
+  color: var(--darkMuted);
+}
+
+.sectionFormation .resumeMeta {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.sectionFormation .resumeTitle {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.sectionFormation .resumeBadge {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.sectionFormation .resumeCard {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: none;
+}
+
+.sectionFormation .resumeCard:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: none;
+}
+
+.sectionFormation .formationHighlight {
+  color: rgba(255, 255, 255, 0.92);
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .resumeTimeline {
@@ -45,7 +80,7 @@
   bottom: 0;
   left: 12px;
   width: 2px;
-  background: var(--resumeRail, rgba(249, 115, 22, 0.24));
+  background: var(--resumeRail, rgba(11, 18, 32, 0.18));
   border-radius: 999px;
 }
 
@@ -73,23 +108,23 @@
     var(--resumeAccent, var(--accent)),
     var(--resumeAccent2, var(--accent2))
   );
-  box-shadow: 0 0 0 4px var(--resumeDotRing, rgba(249, 115, 22, 0.16));
+  box-shadow: 0 0 0 4px var(--resumeDotRing, rgba(11, 18, 32, 0.12));
 }
 
 .resumeCard {
   padding: 1.2rem 1.15rem;
   border-radius: 16px;
-  border: 1px solid var(--resumeBorder, rgba(249, 115, 22, 0.18));
-  background: rgba(255, 255, 255, 0.86);
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--resumeBorder, rgba(11, 18, 32, 0.14));
+  background: color-mix(in srgb, var(--surface) 86%, transparent);
+  box-shadow: 0 14px 40px rgba(11, 18, 32, 0.08);
   transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease, background 160ms ease;
 }
 
 .resumeCard:hover {
   transform: translateY(-2px);
-  border-color: color-mix(in srgb, var(--resumeAccent, rgba(249, 115, 22, 1)) 34%, transparent);
-  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.08);
-  background: rgba(255, 255, 255, 0.92);
+  border-color: color-mix(in srgb, var(--resumeAccent, rgba(11, 18, 32, 1)) 34%, transparent);
+  box-shadow: 0 18px 48px rgba(11, 18, 32, 0.11);
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
 }
 
 .resumeCardHeader {
@@ -109,7 +144,7 @@
 
 .resumeMeta {
   margin: 0.45rem 0 0;
-  color: rgba(11, 11, 11, 0.72);
+  color: rgba(11, 18, 32, 0.72);
   font-size: 1.02rem;
 }
 
@@ -134,15 +169,15 @@
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
-  border: 1px solid color-mix(in srgb, var(--resumeAccent, rgba(249, 115, 22, 1)) 30%, transparent);
-  background: color-mix(in srgb, var(--resumeAccent, rgba(249, 115, 22, 1)) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--resumeAccent, rgba(11, 18, 32, 1)) 30%, transparent);
+  background: color-mix(in srgb, var(--resumeAccent, rgba(11, 18, 32, 1)) 10%, transparent);
   transition: transform 140ms ease, background 140ms ease, border-color 140ms ease;
 }
 
 .resumeButton:hover {
   transform: translateY(-1px);
-  border-color: color-mix(in srgb, var(--resumeAccent, rgba(249, 115, 22, 1)) 45%, transparent);
-  background: color-mix(in srgb, var(--resumeAccent, rgba(249, 115, 22, 1)) 18%, transparent);
+  border-color: color-mix(in srgb, var(--resumeAccent, rgba(11, 18, 32, 1)) 45%, transparent);
+  background: color-mix(in srgb, var(--resumeAccent, rgba(11, 18, 32, 1)) 16%, transparent);
 }
 
 .resumeBadge {
@@ -150,9 +185,9 @@
   align-items: center;
   padding: 0.28rem 0.65rem;
   border-radius: 999px;
-  border: 1px solid var(--resumeBadgeBorder, rgba(249, 115, 22, 0.28));
-  background: var(--resumeBadgeBg, rgba(249, 115, 22, 0.12));
-  color: rgba(11, 11, 11, 0.88);
+  border: 1px solid var(--resumeBadgeBorder, rgba(11, 18, 32, 0.18));
+  background: var(--resumeBadgeBg, rgba(11, 18, 32, 0.06));
+  color: rgba(11, 18, 32, 0.88);
   font-weight: 600;
   font-size: 0.9rem;
   white-space: nowrap;
@@ -164,9 +199,9 @@
   padding: 0.12rem 0.42rem;
   border-radius: 10px;
   font-weight: 700;
-  color: rgba(11, 11, 11, 0.92);
-  border: 1px solid rgba(249, 115, 22, 0.28);
-  background: rgba(249, 115, 22, 0.14);
+  color: rgba(11, 18, 32, 0.92);
+  border: 1px solid rgba(11, 18, 32, 0.18);
+  background: rgba(11, 18, 32, 0.08);
 }
 
 .sectionProjects {
@@ -176,18 +211,18 @@
 }
 
 .sectionSkills {
-  background: #ffffff;
-  color: #0b0b0b;
+  background: var(--bg);
+  color: var(--text);
 }
 
 .sectionSkills .sectionTitle,
 .sectionSkills .skillCategoryTitle,
 .sectionSkills .skillLogoName {
-  color: #0b0b0b;
+  color: var(--text);
 }
 
 .sectionContact {
-  background: #ffffff;
+  background: var(--bg);
 }
 
 .sectionProjects .muted {
