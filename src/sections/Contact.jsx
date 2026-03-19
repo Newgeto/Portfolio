@@ -1,7 +1,5 @@
 function Contact() {
-  const mailSubject = encodeURIComponent('Prise de contact via mon portfolio')
-  const mailBody = encodeURIComponent('Bonjour Yanis,\n\nJ\'aimerais discuter de...')
-  const mailHref = `mailto:Yanis.mdoughy@outlook.fr?subject=${mailSubject}&body=${mailBody}`
+  const mailHref = `mailto:Yanis.mdoughy@outlook.fr`
 
   return (
     <section id="contact" className="section sectionContact reveal" data-reveal>

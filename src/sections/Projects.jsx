@@ -5,21 +5,21 @@ function Projects() {
       title: 'Rustodo',
       description: "Application 'Todo' en Rust avec interface graphique et sauvegarde automatique des tâches.",
       link: { label: 'Voir la repo', href: 'https://github.com/Newgeto/Rustodo' },
-      // Pas de dates
+      
     },
     {
       id: 'Flaskops',
       title: 'Flaskops',
       description: "Projet récent utilisant Flask pour créer une API et gérer des opérations back-end de manière efficace.",
       link: { label: 'Voir la repo', href: 'https://github.com/Newgeto/Flaskops' },
-      // Pas de dates
+      
     },
     {
       id: 'Showeather',
       title: 'Showeather',
       description: "Application météo en temps réel avec React + Vite et l'API OpenWeatherMap.",
       link: { label: 'Voir la repo', href: 'https://github.com/Newgeto/showeather' },
-      // Pas de dates
+      
     },
     {
       id: 'Hack-and-Juice',

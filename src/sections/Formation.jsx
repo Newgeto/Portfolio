@@ -2,9 +2,9 @@ function Formation() {
   const items = [
     {
       years: '2025 – 2028',
-      title: 'Bachelor Informatique',
+      title: 'Bachelor Informatique — Titre RNCP niveau 6',
       place: 'EPITECH (Paris)',
-      status: 'Diplôme en cours',
+      status: 'Diplôme en cours · Formation par projets (pédagogie par l\'expérience)',
     },
     {
       years: '2023 – 2024',
