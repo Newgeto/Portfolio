@@ -29,6 +29,7 @@
   .reveal.is-visible {
     transition: none;
     transform: none;
+    opacity: 1;
   }
 
   .revealDelay1.is-visible,
