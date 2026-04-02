@@ -111,6 +111,13 @@
   }
 }
 
+@media (min-width: 540px) {
+  .projectsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.4rem;
+  }
+}
+
 @media (min-width: 768px) {
   .sectionInner,
   .footerInner {
@@ -139,25 +146,6 @@
   .projectsGrid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.6rem;
-  }
-
-  .projectFooter {
-    grid-template-columns: 1fr auto;
-    align-items: end;
-    gap: 0.9rem;
-  }
-
-  .projectDateRange {
-    font-size: 0.9rem;
-    white-space: nowrap;
-  }
-
-  .projectDates {
-    min-width: 0;
-  }
-
-  .projectActions {
-    min-width: 0;
   }
 
   .contactGrid {
@@ -207,7 +195,8 @@
 
 @media (min-width: 1200px) {
   .sectionInner,
-  .footerInner {
+  .footerInner,
+  .appHeaderInner {
     max-width: 1200px;
   }
 
