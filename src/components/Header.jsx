@@ -1,22 +1,12 @@
 import photo from '../assets/photo.jpg'
 import cvPdf from '../assets/cv-yanis-mdoughy.pdf'
-import { useEffect, useState } from 'react'
+import emailLogo from '../assets/email-logo.svg'
+import cvLogo from '../assets/cv-logo.svg'
+import linkedinLogo from '../assets/linkedin-logo.svg'
+import githubLogo from '../assets/github-logo.svg'
 
 function Header() {
-  const [menuOpen, setMenuOpen] = useState(false)
   const cvHref = cvPdf
-
-  useEffect(() => {
-    if (!menuOpen) return
-
-    const onKeyDown = (event) => {
-      if (event.key !== 'Escape') return
-      setMenuOpen(false)
-    }
-
-    window.addEventListener('keydown', onKeyDown)
-    return () => window.removeEventListener('keydown', onKeyDown)
-  }, [menuOpen])
 
   return (
     <header className="appHeader">
@@ -26,74 +16,32 @@ function Header() {
           <span>Mdoughy Yanis</span>
         </a>
 
-        <div className="appHeaderNav">
-          <nav className="appHeaderLinks" aria-label="Liens rapides">
-            <a className="appHeaderLink" href="mailto:Yanis.mdoughy@outlook.fr">
-              Email
-            </a>
-            <a className="appHeaderLink" href={cvHref} target="_blank" rel="noreferrer">
-              Cv
-            </a>
-            <a
-              className="appHeaderLink"
-              href="https://linkedin.com/in/yanis-mdoughy-558a1028b/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn
-            </a>
-            <a
-              className="appHeaderLink"
-              href="https://github.com/Newgeto"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
-          </nav>
-
-          <button
-            type="button"
-            className="appHeaderToggle"
-            aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
-            aria-expanded={menuOpen}
-            aria-controls="mobileMenu"
-            onClick={() => setMenuOpen((open) => !open)}
+        <nav className="appHeaderLinks" aria-label="Liens rapides">
+          <a className="appHeaderLink" href="mailto:Yanis.mdoughy@outlook.fr" aria-label="Email">
+            <img src={emailLogo} alt="Email" className="appHeaderLinkIcon" />
+          </a>
+          <a className="appHeaderLink" href={cvHref} target="_blank" rel="noreferrer" aria-label="CV">
+            <img src={cvLogo} alt="CV" className="appHeaderLinkIcon" />
+          </a>
+          <a
+            className="appHeaderLink"
+            href="https://linkedin.com/in/yanis-mdoughy-558a1028b/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
           >
-            <span aria-hidden="true">☰</span>
-          </button>
-        </div>
-      </div>
-
-      <div
-        id="mobileMenu"
-        className={`appHeaderMenu${menuOpen ? ' is-open' : ''}`}
-        aria-label="Menu mobile"
-      >
-        <a className="appHeaderMenuLink" href="mailto:Yanis.mdoughy@outlook.fr" onClick={() => setMenuOpen(false)}>
-          Email
-        </a>
-        <a className="appHeaderMenuLink" href={cvHref} target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)}>
-          Cv
-        </a>
-        <a
-          className="appHeaderMenuLink"
-          href="https://linkedin.com/in/yanis-mdoughy-558a1028b/"
-          target="_blank"
-          rel="noreferrer"
-          onClick={() => setMenuOpen(false)}
-        >
-          LinkedIn
-        </a>
-        <a
-          className="appHeaderMenuLink"
-          href="https://github.com/Newgeto"
-          target="_blank"
-          rel="noreferrer"
-          onClick={() => setMenuOpen(false)}
-        >
-          GitHub
-        </a>
+            <img src={linkedinLogo} alt="LinkedIn" className="appHeaderLinkIcon" />
+          </a>
+          <a
+            className="appHeaderLink"
+            href="https://github.com/Newgeto"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+          >
+            <img src={githubLogo} alt="GitHub" className="appHeaderLinkIcon" />
+          </a>
+        </nav>
       </div>
     </header>
   )

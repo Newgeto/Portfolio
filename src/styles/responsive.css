@@ -26,8 +26,12 @@
 
 @media (max-width: 360px) {
   .appHeaderLink {
-    padding: 0.28rem 0.45rem;
-    font-size: 0.82rem;
+    padding: 0.25rem 0.35rem;
+  }
+
+  .appHeaderLinkIcon {
+    width: 17px;
+    height: 17px;
   }
 }
 
@@ -59,22 +63,16 @@
   }
 
   .appHeaderLinks {
-    display: none;
-  }
-
-  .appHeaderToggle {
-    display: inline-flex;
-  }
-
-  .appHeaderMenu {
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
+    gap: 0.3rem;
   }
 
   .appHeaderLink {
-    white-space: nowrap;
-    padding: 0.38rem 0.55rem;
-    font-size: 0.88rem;
+    padding: 0.32rem 0.45rem;
+  }
+
+  .appHeaderLinkIcon {
+    width: 20px;
+    height: 20px;
   }
 
   .footerTop {
