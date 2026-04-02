@@ -16,9 +16,12 @@ function App() {
       '(prefers-reduced-motion: reduce)',
     ).matches
 
-    if (prefersReducedMotion) return
-
     const elements = document.querySelectorAll('[data-reveal]')
+
+    if (prefersReducedMotion) {
+      elements.forEach((el) => el.classList.add('is-visible'))
+      return
+    }
 
     const observer = new IntersectionObserver(
       (entries) => {

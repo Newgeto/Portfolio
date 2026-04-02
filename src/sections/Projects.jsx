@@ -1,3 +1,5 @@
+import githubLogo from '../assets/github-logo.svg'
+
 function Projects() {
   const projects = [
     {
@@ -11,35 +13,35 @@ function Projects() {
       id: 'Tardis',
       title: 'Tardis',
       description: "Projet de data science complet qui analyse et prédit les retards SNCF en intégrant le nettoyage des données, la modélisation et un dashboard Streamlit interactif.",
-      link: { label: 'Voir la repo', href: 'https://github.com/Newgeto/Tardis' },
+      link: { label: { src: githubLogo, alt: "Logo GitHub" }, href: 'https://github.com/Newgeto/Tardis' },
       
     },
     {
       id: 'NextBuy',
       title: 'NextBuy',
       description: "Dashboard interactif utilisant Streamlit et XGBoost pour prédire si un client rachètera un produit en se basant sur son historique d'achat.",
-      link: { label: 'Voir la repo', href: 'https://github.com/Newgeto/NextBuy' },
+      link: { label: { src: githubLogo, alt: "Logo GitHub" }, href: 'https://github.com/Newgeto/NextBuy' },
       
     },
     {
       id: 'Hack-and-Juice',
       title: 'Hack and Juice',
       description: "Exploration des vulnérabilités courantes des applications web par la pratique sur le projet OWASP Juice Shop.",
-      link: { label: 'Voir la repo', href: 'https://github.com/Newgeto/Hack-and-Juice' },
+      link: { label: { src: githubLogo, alt: "Logo GitHub" }, href: 'https://github.com/Newgeto/Hack-and-Juice' },
       dates: { start: '01/12/2025', end: '19/12/2025' },
     },
     {
       id: 'E-todos',
       title: 'E-Todos',
       description: "Application interactive de gestion de tâches construite avec Node.js, Express, CORS et JWT.",
-      link: { label: 'Voir la repo', href: 'https://github.com/Newgeto/E-Todos' },
+      link: { label: { src: githubLogo, alt: "Logo GitHub" }, href: 'https://github.com/Newgeto/E-Todos' },
       dates: { start: '03/11/2025', end: '28/11/2025' },
     },
     {
       id: 'Cv-builder',
       title: 'CV Builder',
       description: "Générateur de CV dynamique développé en PHP permettant de créer facilement un curriculum vitae professionnel.",
-      link: { label: 'Voir la repo', href: 'https://github.com/Newgeto/CV-Builder' },
+      link: { label: { src: githubLogo, alt: "Logo GitHub" }, href: 'https://github.com/Newgeto/CV-Builder' },
       dates: { start: '30/10/2025', end: '02/11/2025' },
     },
   ]
