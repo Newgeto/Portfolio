@@ -1,34 +1,32 @@
+/* ── Scroll-reveal ────────────────────────────────────────────── */
+/* État initial : caché */
 .reveal {
   opacity: 0;
-  transform: translateY(10px);
+  transform: translateY(32px) scale(0.97);
+  will-change: transform, opacity;
 }
 
+/* Visible : entrée fluide avec courbe expo-out */
 .reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 520ms ease, transform 520ms ease;
+  transform: translateY(0) scale(1);
+  transition:
+    opacity 680ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 680ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.revealDelay1.is-visible {
-  transition-delay: 80ms;
-}
+/* Décalages en cascade pour les éléments enfants */
+.revealDelay1.is-visible { transition-delay: 90ms; }
+.revealDelay2.is-visible { transition-delay: 190ms; }
+.revealDelay3.is-visible { transition-delay: 300ms; }
 
-.revealDelay2.is-visible {
-  transition-delay: 160ms;
-}
-
-.revealDelay3.is-visible {
-  transition-delay: 240ms;
-}
-
+/* Accessibilité */
 @media (prefers-reduced-motion: reduce) {
-  .button,
-  .card,
-  .contactCard,
   .reveal,
   .reveal.is-visible {
     transition: none;
     transform: none;
+    opacity: 1;
   }
 
   .revealDelay1.is-visible,

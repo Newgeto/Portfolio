@@ -60,39 +60,46 @@
 .projectButton {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  padding: 0.6rem 0.95rem;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background: rgba(255, 255, 255, 0.92);
-  color: rgba(11, 18, 32, 0.96);
+  gap: 0.5rem;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(22, 27, 34, 0.9);
+  color: rgba(230, 237, 243, 0.95);
   text-decoration: none;
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 0.9rem;
+  font-weight: 500;
+  font-size: 0.875rem;
   white-space: nowrap;
-  transition: transform 140ms ease, background 140ms ease, border-color 140ms ease;
+  letter-spacing: 0.01em;
+  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
 }
 
 .projectButton:hover {
-  background: #ffffff;
-  transform: translateY(-1px);
-  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(33, 41, 54, 0.98);
+  border-color: rgba(255, 255, 255, 0.22);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
   text-decoration: none;
+  color: #fff;
 }
 
 .projectButton:active {
   transform: translateY(0px);
+  box-shadow: none;
 }
 
 .projectButton:focus-visible {
-  outline: 3px solid rgba(255, 255, 255, 0.26);
+  outline: 2px solid rgba(130, 180, 255, 0.55);
   outline-offset: 3px;
 }
 
 .projectGithubLogo {
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   display: block;
+  filter: invert(1);
+  opacity: 0.9;
+  flex-shrink: 0;
 }
 

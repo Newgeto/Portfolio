@@ -52,6 +52,12 @@
   justify-items: center;
 }
 
+a.skillLogoItem {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 .skillLogoItem {
   display: flex;
   flex-direction: column;

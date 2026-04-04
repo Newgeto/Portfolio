@@ -12,11 +12,11 @@ function Skills() {
               <h3 className="skillCategoryTitle">Développement</h3>
             </div>
             <div className="skillLogoGrid skillLogoGridFeatured">
-              {SKILLS.dev.map(({ name, logo }) => (
-                <div key={name} className="skillLogoItem" title={name}>
+              {SKILLS.dev.map(({ name, logo, href }) => (
+                <a key={name} className="skillLogoItem" title={name} href={href} target="_blank" rel="noreferrer">
                   <img className={`skillLogoImg${name === 'WordPress' ? ' skillLogoImgWordpress' : ''}`} src={logo} alt={name} loading="lazy" />
                   <span className="skillLogoName">{name}</span>
-                </div>
+                </a>
               ))}
             </div>
           </div>
@@ -28,11 +28,11 @@ function Skills() {
               <h3 className="skillCategoryTitle">Outils</h3>
             </div>
             <div className="skillLogoGrid">
-              {SKILLS.tools.map(({ name, logo }) => (
-                <div key={name} className="skillLogoItem" title={name}>
+              {SKILLS.tools.map(({ name, logo, href }) => (
+                <a key={name} className="skillLogoItem" title={name} href={href} target="_blank" rel="noreferrer">
                   <img className={`skillLogoImg${name === 'WordPress' ? ' skillLogoImgWordpress' : ''}`} src={logo} alt={name} loading="lazy" />
                   <span className="skillLogoName">{name}</span>
-                </div>
+                </a>
               ))}
             </div>
           </div>
@@ -41,11 +41,11 @@ function Skills() {
               <h3 className="skillCategoryTitle">Création</h3>
             </div>
             <div className="skillLogoGrid">
-              {SKILLS.creation.map(({ name, logo }) => (
-                <div key={name} className="skillLogoItem" title={name}>
+              {SKILLS.creation.map(({ name, logo, href }) => (
+                <a key={name} className="skillLogoItem" title={name} href={href} target="_blank" rel="noreferrer">
                   <img className={`skillLogoImg${name === 'WordPress' ? ' skillLogoImgWordpress' : ''}`} src={logo} alt={name} loading="lazy" />
                   <span className="skillLogoName">{name}</span>
-                </div>
+                </a>
               ))}
             </div>
           </div>
